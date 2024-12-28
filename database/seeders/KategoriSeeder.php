@@ -23,6 +23,10 @@ class KategoriSeeder extends Seeder
         }
 
         DB::table('kategoris')->insert($data);
+
+
+
+            //MANUAL//        
         // DB::table('kategoris')->insert([
         //     ['name' => 'Elektronik'],
         //     ['name' => 'Furnitur'],

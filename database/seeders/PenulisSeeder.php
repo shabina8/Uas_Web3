@@ -24,5 +24,29 @@ class PenulisSeeder extends Seeder
         }
 
         DB::table('penulis')->insert($data);
+
+
+        // Buat Seeder Manual//        
+
+        // DB::table('penulis')->insert([
+        //     [
+        //         'name' => 'J.K. Rowling',
+        //         'bio' => 'Penulis terkenal dari serial Harry Potter.',
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //     ],
+        //     [
+        //         'name' => 'Agatha Christie',
+        //         'bio' => 'Dikenal sebagai ratu cerita detektif.',
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //     ],
+        //     [
+        //         'name' => 'Stephen King',
+        //         'bio' => 'Penulis novel horor dan thriller terkenal.',
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //     ],
+        // ]);
     }
 }

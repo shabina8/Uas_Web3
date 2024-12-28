@@ -28,12 +28,38 @@ class BukuSeeder extends Seeder
         }
 
         DB::table('bukus')->insert($data);
-    }
-        // Buku::create([
-        //     'title' => 'Contoh Buku',
-        //     'kategori_id' => 1, // Pastikan ID kategori sesuai
-        //     'penulis_id' => 1, // Pastikan ID penulis sesuai
-        //     'stock' => 10,
+
+
+
+
+            //MANUAL//
+        // DB::table('bukus')->insert([
+        //     [
+        //         'title' => 'Belajar Laravel',
+        //         'kategori_id' => 1, // Pastikan ID ini ada di tabel kategoris
+        //         'penulis_id' => 1, // Pastikan ID ini ada di tabel penulis
+        //         'stock' => 10,
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //     ],
+        //     [
+        //         'title' => 'Pemrograman PHP',
+        //         'kategori_id' => 2, // Pastikan ID ini ada di tabel kategoris
+        //         'penulis_id' => 2, // Pastikan ID ini ada di tabel penulis
+        //         'stock' => 5,
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //     ],
+        //     [
+        //         'title' => 'Mastering JavaScript',
+        //         'kategori_id' => 1, // Pastikan ID ini ada di tabel kategoris
+        //         'penulis_id' => 3, // Pastikan ID ini ada di tabel penulis
+        //         'stock' => 15,
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //     ],
         // ]);
+    }
+        
     
 }

@@ -26,5 +26,33 @@ class AnggotaSeeder extends Seeder
         }
 
         DB::table('anggotas')->insert($data);
+
+
+
+            //MANUAL//
+
+        // DB::table('anggotas')->insert([
+        //     [
+        //         'name' => 'John Doe',
+        //         'email' => 'john.doe@example.com',
+        //         'no_telpon' => '081234567890',
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //     ],
+        //     [
+        //         'name' => 'Jane Smith',
+        //         'email' => 'jane.smith@example.com',
+        //         'no_telpon' => '081345678901',
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //     ],
+        //     [
+        //         'name' => 'Robert Brown',
+        //         'email' => 'robert.brown@example.com',
+        //         'no_telpon' => '081456789012',
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //     ],
+        // ]);
     }
 }

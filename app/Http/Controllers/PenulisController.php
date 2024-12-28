@@ -51,13 +51,9 @@ class PenulisController extends Controller
     // Menghapus data
     public function destroy($id)
     {
-        $penulis =Penulis::findOrFail($id);
+        $penulis = Penulis::findOrFail($id);
+        $penulis->delete();
 
-        try {
-            $penulis->delete();
-            return redirect()->route('data-penulis.index')->with('success', 'Data berhasil dihapus!');
-        } catch (\Exception $e) {
-            return redirect()->route('data-penulis.index')->with('error', 'Terjadi kesalahan saat menghapus data!');
-        }
+        return redirect()->route('data-penulis.index')->with('success', 'Data  berhasil dihapus.');
     }
 }

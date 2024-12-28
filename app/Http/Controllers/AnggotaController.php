@@ -54,13 +54,9 @@ class AnggotaController extends Controller
     // Menghapus data
     public function destroy($id)
     {
-        $anggota =Anggota::findOrFail($id);
+        $anggota = Anggota::findOrFail($id);
+        $anggota->delete();
 
-        try {
-            $anggota->delete();
-            return redirect()->route('data-anggota.index')->with('success', 'Data berhasil dihapus!');
-        } catch (\Exception $e) {
-            return redirect()->route('data-anggota.index')->with('error', 'Terjadi kesalahan saat menghapus data!');
-        }
+        return redirect()->route('data-anggota.index')->with('success', 'Data  berhasil dihapus.');
     }
 }

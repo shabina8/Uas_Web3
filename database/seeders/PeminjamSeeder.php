@@ -33,8 +33,10 @@ class PeminjamSeeder extends Seeder
         }
 
         DB::table('peminjams')->insert($data);
-    }
-    //     Peminjam::create([
+
+
+        // Manual//
+    //         Peminjam::create([
     //     'anggota_id' => 1, // Pastikan ID anggota valid
     //     'buku_id' => 1,    // Pastikan ID buku valid
     //     'borrowed_at' => Carbon::now()->subDays(5), // 5 hari yang lalu
@@ -50,5 +52,7 @@ class PeminjamSeeder extends Seeder
     //     'returned_at' => Carbon::now()->subDays(1), // Dikembalikan kemarin
     // ]);
 
+    }
+    
     
 }
