@@ -36,7 +36,7 @@
             <img src="{{ asset('assets/img/logo.png') }}" alt="">
         </div>
         <div class="text-center mt-4 name">
-            Perpustakaan Zaman Now <br>
+            Perpustakaan  <br>
 
             @if(session('wrong'))
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
