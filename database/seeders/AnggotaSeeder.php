@@ -17,8 +17,8 @@ class AnggotaSeeder extends Seeder
         $data = [];
         for ($i = 1; $i <= 100; $i++) {
             $data[] = [
-                'name' => 'Kazz ' . $i,
-                'email' => 'Kazzz' . $i . '@example.com',
+                'name' => 'Shabina' . $i,
+                'email' => 'Shabina' . $i . '@example.com',
                 'no_telpon' => '081234567' . str_pad($i, 3, '0', STR_PAD_LEFT),
                 'created_at' => now(),
                 'updated_at' => now(),
