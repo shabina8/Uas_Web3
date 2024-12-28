@@ -36,6 +36,21 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  {{-- <style>
+    body {
+        background: url('{{ asset("assets/img/bg-ds2.webp") }}') no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+    }
+    .wrapper {
+        
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+  
+</style> --}}
 </head>
 
 <body>

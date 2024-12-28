@@ -13,11 +13,27 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <title>Login Sistem</title>
+
+    <style>
+        body {
+            background: url('{{ asset("assets/img/bg.jpg") }}') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .wrapper {
+            
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+      
+    </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="logo">
-            <img src="{{ asset('assets/img/logo.jpg') }}" alt="">
+            <img src="{{ asset('assets/img/logo.png') }}" alt="">
         </div>
         <div class="text-center mt-4 name">
             Perpustakaan Zaman Now <br>
